@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background: #000000;
+  background-image: url("/background.png");
+}
+
+@layer base {
+  body {
+    @apply text-gray-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.home-link {
+  width: 6rem;
+  display: inline-block;
+}
