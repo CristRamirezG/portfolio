@@ -27,7 +27,7 @@ const socialLinks = [
 
 export default function Hero({ copyToClipboard, copiedField }) {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-12">
+    <section className="flex flex-col   md:flex-row items-center gap-12">
       <div className="relative w-64 h-64 flex-shrink-0 overflow-hidden rounded-full shadow-xl">
         <Image
           src="/Profile1.png"
