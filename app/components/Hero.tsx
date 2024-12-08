@@ -9,6 +9,12 @@ import {
   Clipboard,
 } from "lucide-react";
 
+// Interfaz para las propiedades del componente Hero
+interface HeroProps {
+  copyToClipboard: (value: string, label: string) => void; // Función para copiar al portapapeles
+  copiedField: string; // Campo que se ha copiado
+}
+
 const contactInfo = [
   { icon: Mail, label: "Email", value: "Cristobalandres1999@gmail.com" },
   { icon: Phone, label: "Teléfono", value: "+56 9 5300 5128" },
@@ -25,9 +31,9 @@ const socialLinks = [
   { icon: Twitter, label: "Twitter", url: "https://twitter.com/yourusername" },
 ];
 
-export default function Hero({ copyToClipboard, copiedField }) {
+export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
   return (
-    <section className="flex flex-col   md:flex-row items-center gap-12">
+    <section className="flex flex-col md:flex-row items-center gap-12">
       <div className="relative w-64 h-64 flex-shrink-0 overflow-hidden rounded-full shadow-xl">
         <Image
           src="/Profile1.png"
