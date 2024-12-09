@@ -36,7 +36,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
     <section className="flex flex-col md:flex-row items-center gap-12">
       <div className="relative w-64 h-64 flex-shrink-0 overflow-hidden rounded-full shadow-xl">
         <Image
-          src="public/Profile1.png"
+          src="/profile_pic/Profile1.png"
           alt="Foto de perfil de Cristóbal Andrés Ramírez González"
           layout="fill"
           objectFit="cover"
@@ -57,8 +57,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
           Desarrollador con experiencia en implementación de sistemas basados en
           Inteligencia Artificial, automatización de procesos, desarrollo web y
           diseño de soluciones de software a medida. Especializado en el uso de
-          modelos de lenguaje natural (LLMs), integración de bases de datos
-          vectoriales, y gestión de backend y frontend en múltiples frameworks.
+          modelos de lenguaje natural (LLMs), gestión de backend y frontend en múltiples frameworks.
           Además, cuento con experiencia en herramientas de Machine Learning
           para data science, procesamiento de datos y deep learning, incluyendo
           el uso de redes neuronales, modelos preentrenados y técnicas avanzadas

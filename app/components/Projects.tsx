@@ -5,30 +5,37 @@ const projects = [
   {
     title: "Fine-tuning de Modelos LLM",
     description:
-      "Ajuste fino de modelos LLM locales con Python y Conda, publicación en GitHub y Hugging Face, uso de redes convolucionales y ETL.",
+      "2022-2024: Ajuste fino de modelos de lenguaje locales con Python y Conda, publicado en GitHub y Hugging Face. Implementación de redes convolucionales y procesos ETL para mejorar capacidades predictivas y de clasificación.",
     image: "/project_img/Finetunning/1.png",
     link: "https://colab.research.google.com/drive/1yWyM0RiIIk3FcEBMaWyFcPQ6EOsFhQYk?usp=sharing",
   },
   {
     title: "Bot de Discord con sistema RAG / LLM",
     description:
-      "Asistente integrado con Cohere, Annoy, Whisper, ElevenLabs y GroqCloud, operando en la nube con Render y Flask para configuración mediante OAuth.",
+      "2024: Asistente virtual basado en Cohere, Annoy, Whisper, ElevenLabs y GroqCloud. Configurado en Render utilizando Flask con integración OAuth para funcionalidades avanzadas en la nube.",
     image: "/project_img/Discordbot/1.png",
     link: "/proyectos/discord-bot-rag-llm",
   },
   {
     title: "Sistema de Automatización de Chatbots",
     description:
-      "Creación automática de chatbots en ChatScript, integrando Vue.js, Keycloak, MongoDB, GroqCloud API, Weaviate y LangChain.",
+      "2024: Creación automática de chatbots en ChatScript. Integración de Vue.js, Keycloak, MongoDB, GroqCloud API, Weaviate y LangChain, optimizando memoria y concurrencia.",
     image: "/project_img/Chatbots/1.png",
     link: "/proyectos/chatbot-automation",
   },
   {
     title: "Sistema de Campañas Telefónicas",
     description:
-      "Gestión de campañas de llamadas utilizando Vue.js, FastAPI, MongoDB y Docker en un entorno basado en Asterisk.",
+      "2023: Desarrollo de un sistema para gestionar campañas de llamadas telefónicas. Utilización de Vue.js, FastAPI, MongoDB y Docker en un entorno robusto basado en Asterisk.",
     image: "/project_img/Phonecampaign/1.png",
     link: "/proyectos/phone-campaign-system",
+  },
+  {
+    title: "Gestor de Inventario (Jupiter Pizzería)",
+    description:
+      "2022: Sistema integral para gestión de inventarios desarrollado con Laravel bajo el modelo MVC. Incluye frontend, backend y base de datos MySQL, optimizando la administración de recursos.",
+    image: "/project_img/InventoryManager/1.png",
+    link: "/proyectos/inventory-manager",
   },
 ];
 
