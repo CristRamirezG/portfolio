@@ -36,7 +36,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
     <section className="flex flex-col md:flex-row items-center gap-12">
       <div className="relative w-64 h-64 flex-shrink-0 overflow-hidden rounded-full shadow-xl">
         <Image
-          src="/profile_pic/Profile1.png"
+          src="/profile_pic/profile1.png"
           alt="Foto de perfil de Cristóbal Andrés Ramírez González"
           layout="fill"
           objectFit="cover"

@@ -127,7 +127,7 @@ function ProjectCard({ project }: { project: Project }) {
     <div className="bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
       <div className="relative h-48">
         <AnimatePresence initial={false} custom={direction}>
-          <motion.div
+        <motion.div
             key={currentImageIndex}
             custom={direction}
             variants={imageVariants}
@@ -138,7 +138,11 @@ function ProjectCard({ project }: { project: Project }) {
               x: { type: "spring", stiffness: 300, damping: 30 },
               opacity: { duration: 0.2 },
             }}
-            className="absolute w-full h-full"
+            style={{
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+            }}
           >
             <Image
               src={project.images[currentImageIndex]}
