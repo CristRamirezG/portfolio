@@ -50,7 +50,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mt-2">
             Licenciado en ciencias de la ingeniería | Desarrollador
-            Web | Analista de datos
+            Web | Analista de datos.
           </p>
         </div>
         <p className="text-lg text-foreground">
