@@ -26,9 +26,9 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://linkedin.com/in/CristRamirez",
   },
-  { icon: Twitter, label: "Twitter", url: "https://twitter.com/yourusername" },
+  { icon: Twitter, label: "Twitter", url: "https://twitter.com/Elbowed056" },
 ];
 
 export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
@@ -36,7 +36,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
     <section className="flex flex-col md:flex-row items-center gap-12">
       <div className="relative w-64 h-64 flex-shrink-0 overflow-hidden rounded-full shadow-xl">
         <Image
-          src="/Profile1.png"
+          src="public/Profile1.png"
           alt="Foto de perfil de Cristóbal Andrés Ramírez González"
           layout="fill"
           objectFit="cover"
@@ -50,7 +50,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mt-2">
             Ingeniería Civil en Computación mención Informática | Desarrollador
-            Web | Diseñador UX
+            Web | Analista de datos
           </p>
         </div>
         <p className="text-lg text-foreground">
@@ -59,6 +59,10 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
           diseño de soluciones de software a medida. Especializado en el uso de
           modelos de lenguaje natural (LLMs), integración de bases de datos
           vectoriales, y gestión de backend y frontend en múltiples frameworks.
+          Además, cuento con experiencia en herramientas de Machine Learning
+          para data science, procesamiento de datos y deep learning, incluyendo
+          el uso de redes neuronales, modelos preentrenados y técnicas avanzadas
+          para clasificación y análisis predictivo.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {contactInfo.map((item, index) => (
