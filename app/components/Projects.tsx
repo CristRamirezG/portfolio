@@ -86,9 +86,7 @@ function ProjectCard({ project }: { project: Project }) {
 
   const handleNextImage = () => {
     setDirection(1);
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex + 1) % project.images.length
-    );
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
   };
 
   const handlePrevImage = () => {
@@ -124,59 +122,65 @@ function ProjectCard({ project }: { project: Project }) {
   };
 
   return (
-    <div className="bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-      <div className="relative h-48">
-        <AnimatePresence initial={false} custom={direction}>
-        <motion.div
-            key={currentImageIndex}
-            custom={direction}
-            variants={imageVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={{
-              x: { type: "spring", stiffness: 300, damping: 30 },
-              opacity: { duration: 0.2 },
-            }}
-            style={{
-              position: 'absolute',
-              width: '100%',
-              height: '100%',
-            }}
-          >
-            <Image
-              src={project.images[currentImageIndex]}
-              alt={`${project.title} - Image ${currentImageIndex + 1}`}
-              layout="fill"
-              objectFit="cover"
-            />
-          </motion.div>
-        </AnimatePresence>
-        {project.images.length > 1 && (
-          <>
-            <button
-              onClick={handlePrevImage}
-              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-200 z-10"
-              aria-label="Previous image"
+    <Link href={project.link} passHref legacyBehavior>
+      <a className="block bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <div className="relative h-48">
+          <AnimatePresence initial={false} custom={direction}>
+            <motion.div
+              key={currentImageIndex}
+              custom={direction}
+              variants={imageVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.2 },
+              }}
+              style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+              }}
             >
-              <ChevronLeft size={24} />
-            </button>
-            <button
-              onClick={handleNextImage}
-              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-200 z-10"
-              aria-label="Next image"
-            >
-              <ChevronRight size={24} />
-            </button>
-          </>
-        )}
-      </div>
-      <div className="p-4">
-        <h3 className="text-xl font-semibold text-primary mb-2">
-          {project.title}
-        </h3>
-        <p className="text-muted-foreground">{project.description}</p>
-      </div>
-    </div>
+              <Image
+                src={project.images[currentImageIndex]}
+                alt={`${project.title} - Image ${currentImageIndex + 1}`}
+                layout="fill"
+                objectFit="cover"
+              />
+            </motion.div>
+          </AnimatePresence>
+          {project.images.length > 1 && (
+            <>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  handlePrevImage();
+                }}
+                className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-200 z-10"
+                aria-label="Previous image"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNextImage();
+                }}
+                className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-200 z-10"
+                aria-label="Next image"
+              >
+                <ChevronRight size={24} />
+              </button>
+            </>
+          )}
+        </div>
+        <div className="p-4">
+          <h3 className="text-xl font-semibold text-primary mb-2">{project.title}</h3>
+          <p className="text-muted-foreground">{project.description}</p>
+        </div>
+      </a>
+    </Link>
   );
 }

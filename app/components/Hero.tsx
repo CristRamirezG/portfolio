@@ -49,7 +49,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
             Cristóbal Andrés Ramírez González
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mt-2">
-            Ingeniería Civil en Computación mención Informática | Desarrollador
+            Licenciado en ciencias de la ingeniería | Desarrollador
             Web | Analista de datos
           </p>
         </div>

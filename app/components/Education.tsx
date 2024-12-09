@@ -3,7 +3,7 @@ export default function Education() {
     {
       year: "2018 - 2024",
       degree:
-        "Licenciatura en ciencias de la ingeniería y Ingeniería civil en computación mención informática",
+        "Licenciatura en ciencias de la ingeniería y Ingeniería civil en computación mención informática (en curso)",
       institution: "Universidad tecnológica metropolitana (UTEM)",
     },
     {
