@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-background via-background/80 to-primary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
-        <Hero copyToClipboard={copyToClipboard} copiedField={copiedField} />
+        <Hero copyToClipboard={copyToClipboard} copiedField={copiedField || ''} /> {/* Aseguramos un string */}
         <Skills />
         <Experience />
         <Education />
