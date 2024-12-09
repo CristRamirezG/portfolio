@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from "framer-motion";
 
 type Project = {
   title: string;
@@ -9,8 +11,7 @@ type Project = {
   link: string;
 };
 
-
-const projects: Project [] = [
+const projects: Project[] = [
   {
     title: "Fine-tuning de Modelos LLM",
     description:
@@ -22,7 +23,7 @@ const projects: Project [] = [
     title: "Bot de Discord con sistema RAG / LLM",
     description:
       "2024: Asistente virtual basado en Cohere, Annoy, Whisper, ElevenLabs y GroqCloud. Configurado en Render utilizando Flask con integración OAuth para funcionalidades avanzadas en la nube.",
-    images: ["/project_img/Discordbot/1.png","/project_img/Discordbot/2.png"],
+    images: ["/project_img/Discordbot/1.png", "/project_img/Discordbot/2.png"],
     link: "/proyectos/discord-bot-rag-llm",
   },
   {
@@ -36,14 +37,22 @@ const projects: Project [] = [
     title: "Sistema de Campañas Telefónicas",
     description:
       "2023: Desarrollo de un sistema para gestionar campañas de llamadas telefónicas. Utilización de Vue.js, FastAPI, MongoDB y Docker en un entorno robusto basado en Asterisk.",
-    images: ["/project_img/Phonecampaign/1.png","/project_img/Phonecampaign/2.png", "/project_img/Phonecampaign/3.png"],
+    images: [
+      "/project_img/Phonecampaign/1.png",
+      "/project_img/Phonecampaign/2.png",
+      "/project_img/Phonecampaign/3.png",
+    ],
     link: "/proyectos/phone-campaign-system",
   },
   {
     title: "Gestor de Inventario (Jupiter Pizzería)",
     description:
       "2022: Sistema integral para gestión de inventarios desarrollado con Laravel bajo el modelo MVC. Incluye frontend, backend y base de datos MySQL, optimizando la administración de recursos.",
-    images: ["/project_img/Jupiter/1.png","/project_img/Jupiter/2.png","/project_img/Jupiter/3.png"],
+    images: [
+      "/project_img/Jupiter/1.png",
+      "/project_img/Jupiter/2.png",
+      "/project_img/Jupiter/3.png",
+    ],
     link: "/proyectos/inventory-manager",
   },
 ];
@@ -73,42 +82,95 @@ export default function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
+    setDirection(1);
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex + 1) % project.images.length
+    );
   };
 
   const handlePrevImage = () => {
+    setDirection(-1);
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
     );
   };
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNextImage();
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const imageVariants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? 1000 : -1000,
+      opacity: 0,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction: number) => ({
+      zIndex: 0,
+      x: direction < 0 ? 1000 : -1000,
+      opacity: 0,
+    }),
+  };
+
   return (
-    <div className="bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
+    <div className="bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
       <div className="relative h-48">
-        <Image
-          src={project.images[currentImageIndex]}
-          alt={`${project.title} - Image ${currentImageIndex + 1}`}
-          layout="fill"
-          objectFit="cover"
-          className="transition-transform duration-300 group-hover:scale-110"
-        />
-        <button
-          onClick={handlePrevImage}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full"
-        >
-          ◀
-        </button>
-        <button
-          onClick={handleNextImage}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-primary text-white p-2 rounded-full"
-        >
-          ▶
-        </button>
+        <AnimatePresence initial={false} custom={direction}>
+          <motion.div
+            key={currentImageIndex}
+            custom={direction}
+            variants={imageVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{
+              x: { type: "spring", stiffness: 300, damping: 30 },
+              opacity: { duration: 0.2 },
+            }}
+            className="absolute w-full h-full"
+          >
+            <Image
+              src={project.images[currentImageIndex]}
+              alt={`${project.title} - Image ${currentImageIndex + 1}`}
+              layout="fill"
+              objectFit="cover"
+            />
+          </motion.div>
+        </AnimatePresence>
+        {project.images.length > 1 && (
+          <>
+            <button
+              onClick={handlePrevImage}
+              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-200 z-10"
+              aria-label="Previous image"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button
+              onClick={handleNextImage}
+              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all duration-200 z-10"
+              aria-label="Next image"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </>
+        )}
       </div>
       <div className="p-4">
-        <h3 className="text-xl font-semibold text-primary mb-2">{project.title}</h3>
+        <h3 className="text-xl font-semibold text-primary mb-2">
+          {project.title}
+        </h3>
         <p className="text-muted-foreground">{project.description}</p>
       </div>
     </div>
