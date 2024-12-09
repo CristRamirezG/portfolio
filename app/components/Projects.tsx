@@ -34,7 +34,7 @@ const projects = [
     title: "Gestor de Inventario (Jupiter Pizzería)",
     description:
       "2022: Sistema integral para gestión de inventarios desarrollado con Laravel bajo el modelo MVC. Incluye frontend, backend y base de datos MySQL, optimizando la administración de recursos.",
-    image: "/project_img/InventoryManager/1.png",
+    image: "/project_img/Jupiter/1.png",
     link: "/proyectos/inventory-manager",
   },
 ];
