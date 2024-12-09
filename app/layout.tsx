@@ -56,7 +56,7 @@ export default function RootLayout({
   }, [isHomeHovered, isTransitioning]);
 
   useEffect(() => {
-    let timeout;
+    let timeout: ReturnType<typeof setTimeout>; // Solución genérica para ambos entornos
     if (!isHomeHovered && !isTransitioning) {
       timeout = setTimeout(() => {
         setDisplayText("");
@@ -64,6 +64,7 @@ export default function RootLayout({
     }
     return () => clearTimeout(timeout);
   }, [isHomeHovered, isTransitioning]);
+  
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
