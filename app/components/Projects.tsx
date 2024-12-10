@@ -24,14 +24,14 @@ const projects: Project[] = [
     description:
       "2024: Asistente virtual basado en Cohere, Annoy, Whisper, ElevenLabs y GroqCloud. Configurado en Render utilizando Flask con integración OAuth para funcionalidades avanzadas en la nube.",
     images: ["/project_img/Discordbot/1.png", "/project_img/Discordbot/2.png"],
-    link: "/proyectos/discord-bot-rag-llm",
+    link: "https://openai-discord-nimubot.onrender.com/",
   },
   {
     title: "Sistema de Automatización de Chatbots",
     description:
       "2024: Creación automática de chatbots en ChatScript. Integración de Vue.js, Keycloak, MongoDB, GroqCloud API, Weaviate y LangChain, optimizando memoria y concurrencia.",
     images: ["/project_img/Chatbots/1.png"],
-    link: "/proyectos/chatbot-automation",
+    link: "/",
   },
   {
     title: "Sistema de Campañas Telefónicas",
@@ -42,7 +42,7 @@ const projects: Project[] = [
       "/project_img/Phonecampaign/2.png",
       "/project_img/Phonecampaign/3.png",
     ],
-    link: "/proyectos/phone-campaign-system",
+    link: "/",
   },
   {
     title: "Gestor de Inventario (Jupiter Pizzería)",
@@ -53,7 +53,7 @@ const projects: Project[] = [
       "/project_img/Jupiter/2.png",
       "/project_img/Jupiter/3.png",
     ],
-    link: "/proyectos/inventory-manager",
+    link: "/",
   },
 ];
 

@@ -14,8 +14,7 @@ export default function Contact() {
       </h2>
       <div className="max-w-2xl mx-auto">
         <p className="text-center text-muted-foreground mb-8">
-          ¿Interesado en colaborar o tienes alguna pregunta? No dudes en
-          contactarme.
+          ¿Interesado en colaborar o tienes alguna pregunta?.
         </p>
         <div className="space-y-4">
           {contactInfo.map((item, index) => (
