@@ -20,11 +20,11 @@ const projects: Project[] = [
     link: "https://colab.research.google.com/drive/1yWyM0RiIIk3FcEBMaWyFcPQ6EOsFhQYk?usp=sharing",
   },
   {
-    title: "Bot de Discord con sistema RAG / LLM",
+    title: "Bot de Discord con LLM, Text-to-Voice y Sistema RAG",
     description:
-      "2024: Asistente virtual basado en Cohere, Annoy, Whisper, ElevenLabs y GroqCloud. Configurado en Render utilizando Flask con integración OAuth para funcionalidades avanzadas en la nube.",
+      "2024: Asistente virtual con en Cohere, Annoy, Whisper, ElevenLabs y GroqCloud. Configurado en Render utilizando Flask con integración OAuth para Funciones de administración.",
     images: ["/project_img/Discordbot/1.png", "/project_img/Discordbot/2.png"],
-    link: "https://openai-discord-nimubot.onrender.com/",
+    link: "/projects/Discord_Bot",
   },
   {
     title: "Sistema de Automatización de Chatbots",

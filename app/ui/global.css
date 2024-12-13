@@ -43,3 +43,9 @@ body {
   width: 6rem;
   display: inline-block;
 }
+
+
+video, iframe {
+  max-width: 100%;
+  height: 15rem;
+}
