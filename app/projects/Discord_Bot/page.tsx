@@ -1,19 +1,4 @@
 // projects/D/page.jsx
-export function SelfHostedVideo() {
-  return (
-    <video controls width="640" height="360" preload="auto">
-      <source src="/videos/BotDiscord.mp4" type="video/mp4" />
-      <track
-        src="/public/videos/BotDiscord.mp4"
-        kind="subtitles"
-        srcLang="en"
-        label="English"
-      />
-      Your browser does not support the video tag.
-    </video>
-  );
-}
-
 import Link from "next/link";
 
 export default function Page() {
