@@ -14,8 +14,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 body {
-  background: #000000;
-  background-image: url("/background.png");
+  --dark-background: #000000;
+  background: var(--dark-background);
+  background-image: url("/background3.png");
+  background-size:auto;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
 @layer base {
