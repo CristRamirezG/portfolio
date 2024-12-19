@@ -26,7 +26,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    url: "https://linkedin.com/in/CristRamirez",
+    url: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
   },
   { icon: Twitter, label: "Twitter", url: "https://twitter.com/Elbowed056" },
 ];
