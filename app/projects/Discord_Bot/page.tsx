@@ -9,6 +9,15 @@ export default function Page() {
       </h1>
 
       <section className="bg-black/60 backdrop-blur-sm rounded-lg p-6 shadow-lg space-y-6">
+        <h2 className="text-2xl font-semibold text-gray-100 mb-4">
+          Sobre el Proyecto
+        </h2>
+        <p className="text-gray-300">
+          Este bot combina transcripción de audio, generación de respuestas mediante un LLM y reproducción de audio en Discord. Su diseño modular incluye un dashboard seguro en Flask con OAuth2 para personalización, y un sistema RAG para respuestas precisas usando datos contextuales cargados por el usuario.
+        </p>
+      </section>
+
+      <section className="bg-black/60 backdrop-blur-sm rounded-lg p-6 shadow-lg space-y-6">
         <h2 className="text-2xl font-semibold text-gray-100">
           Demo: Respuesta generada para "¿Qué es Tailwind? ¿Es similar a CSS?"
         </h2>
@@ -77,15 +86,6 @@ export default function Page() {
             Pagina en Render
             </Link>
         </div>
-      </section>
-
-      <section className="bg-black/60 backdrop-blur-sm rounded-lg p-6 shadow-lg">
-        <h2 className="text-2xl font-semibold text-gray-100 mb-4">
-          Sobre el Proyecto
-        </h2>
-        <p className="text-gray-300">
-          Este bot combina transcripción de audio, generación de respuestas mediante un LLM y reproducción de audio en Discord. Su diseño modular incluye un dashboard seguro en Flask con OAuth2 para personalización, y un sistema RAG para respuestas precisas usando datos contextuales cargados por el usuario.
-        </p>
       </section>
     </div>
   );

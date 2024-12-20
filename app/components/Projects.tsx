@@ -15,9 +15,9 @@ const projects: Project[] = [
   {
     title: "Fine-tuning de Modelos LLM",
     description:
-      "2022-2024: Ajuste fino de modelos de lenguaje locales con Python y Conda, publicado en GitHub y Hugging Face. Implementación de redes convolucionales y procesos ETL para mejorar capacidades predictivas y de clasificación.",
+      "2024: Proyecto en el cual desarrolle un modelo de fine-tuning basado en mistralai/Mistral-7B-Instruct-v0.2, diseñado para responder de manera efectiva a todo tipo de consultas relacionadas con Drácula, la obra clásica de Bram Stoker publicada en 1897.",
     images: ["/project_img/Finetunning/1.png"],
-    link: "https://colab.research.google.com/drive/1yWyM0RiIIk3FcEBMaWyFcPQ6EOsFhQYk?usp=sharing",
+    link: "https://github.com/CristRamirezG/Finetunning-Mistral7B-qlora-dracula-bram-stoker-1897",
   },
   {
     title: "Bot de Discord con LLM, Text-to-Voice y Sistema RAG",
@@ -29,14 +29,14 @@ const projects: Project[] = [
   {
     title: "Sistema de Automatización de Chatbots",
     description:
-      "2024: Creación automática de chatbots en ChatScript. Integración de Vue.js, Keycloak, MongoDB, GroqCloud API, Weaviate y LangChain, optimizando memoria y concurrencia.",
+      "2024: Creación automática de chatbots en ChatScript Utilizando Modelos LLM. Integración de Vue.js, Keycloak, MongoDB, GroqCloud API, Weaviate y LangChain, optimizando memoria y concurrencia.",
     images: ["/project_img/Chatbots/1.png"],
-    link: "/",
+    link: "/projects/Chatbots",
   },
   {
     title: "Sistema de Campañas Telefónicas",
     description:
-      "2023: Desarrollo de un sistema para gestionar campañas de llamadas telefónicas. Utilización de Vue.js, FastAPI, MongoDB y Docker en un entorno robusto basado en Asterisk.",
+      "2023: Desarrollo de un sistema para gestionar campañas de llamadas telefónicas. Utilización de Vue.js, FastAPI, MongoDB y Docker en un entorno basado en Asterisk.",
     images: [
       "/project_img/Phonecampaign/1.png",
       "/project_img/Phonecampaign/2.png",
