@@ -63,7 +63,7 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
           el uso de redes neuronales, modelos preentrenados y técnicas avanzadas
           para clasificación y análisis predictivo.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid ms:grid-cols-1 md:grid-cols-1 gap-4">
           {contactInfo.map((item, index) => (
             <div
               key={index}
