@@ -40,7 +40,7 @@ export default function Skills() {
     },
     {
       category: "Análisis de Datos",
-      items: ["Power BI", "Excel (Intermedio)"],
+      items: ["Power BI", "Excel (avanzado)", "python", "SQL"],
     },
     {
       category: "Sistemas y Despliegue",
