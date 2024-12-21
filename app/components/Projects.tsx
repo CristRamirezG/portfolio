@@ -12,13 +12,7 @@ type Project = {
 };
 
 const projects: Project[] = [
-  {
-    title: "Fine-tuning de Modelos LLM",
-    description:
-      "2024: Proyecto en el cual desarrolle un modelo de fine-tuning basado en mistralai/Mistral-7B-Instruct-v0.2, diseñado para responder de manera efectiva a todo tipo de consultas relacionadas con Drácula, la obra clásica de Bram Stoker publicada en 1897.",
-    images: ["/project_img/Finetunning/1.png"],
-    link: "https://github.com/CristRamirezG/Finetunning-Mistral7B-qlora-dracula-bram-stoker-1897",
-  },
+  
   {
     title: "Bot de Discord con LLM, Text-to-Voice y Sistema RAG",
     description:
@@ -30,8 +24,15 @@ const projects: Project[] = [
     title: "Sistema de Automatización de Chatbots",
     description:
       "2024: Creación automática de chatbots en ChatScript Utilizando Modelos LLM. Integración de Vue.js, Keycloak, MongoDB, GroqCloud API, Weaviate y LangChain, optimizando memoria y concurrencia.",
-    images: ["/project_img/Chatbots/1.png"],
+    images: ["/project_img/Chatbots/1.png", "/project_img/Chatbots/2.png", "/project_img/Chatbots/3.png"],
     link: "/projects/Chatbots",
+  },
+  {
+    title: "Fine-tuning de Modelos LLM",
+    description:
+      "2024: Proyecto en el cual desarrolle un modelo de fine-tuning basado en mistralai/Mistral-7B-Instruct-v0.2, diseñado para responder de manera efectiva a todo tipo de consultas relacionadas con Drácula, la obra clásica de Bram Stoker publicada en 1897.",
+    images: ["/project_img/Finetunning/1.png"],
+    link: "https://github.com/CristRamirezG/Finetunning-Mistral7B-qlora-dracula-bram-stoker-1897",
   },
   {
     title: "Sistema de Campañas Telefónicas",

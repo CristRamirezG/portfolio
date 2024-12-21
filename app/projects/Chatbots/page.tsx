@@ -140,16 +140,15 @@ export default function Page() {
           <strong>Llama 3.3 70B-Versatile</strong>, proporcionado por{" "}
           <strong>GroqCloud API</strong>.
         </p>
-
         <iframe
           width="1897"
           height="785"
           src="https://www.youtube.com/embed/SQNHUjZ88sE"
           title="Sistema de creación de chatbots con chatscript - Vista de desarrollador"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
         ></iframe>
       </section>
     </div>
