@@ -125,10 +125,10 @@ export default function Page() {
         <h2 className="text-3xl font-semibold text-white">Demo del Sistema</h2>
         <p className="text-gray-300">
           En esta demo, se está creando un bot para un canal web con interacción
-          inicial automática (<strong>Onbound</strong>), configurado en inglés. El prompt
-          utilizado describe un bot diseñado para promocionar el nuevo juego de
-          Valve, <strong>Deadlock</strong>, que actualmente se encuentra en beta
-          cerrada a través de Steam. El bot debe ser capaz de:
+          inicial automática (<strong>Onbound</strong>), configurado en inglés.
+          El prompt utilizado describe un bot diseñado para promocionar el nuevo
+          juego de Valve, <strong>Deadlock</strong>, que actualmente se
+          encuentra en beta cerrada a través de Steam. El bot debe ser capaz de:
         </p>
         <ul className="list-disc list-inside text-gray-300 space-y-2">
           <li>Proporcionar información sobre el Discord del juego.</li>
@@ -140,15 +140,16 @@ export default function Page() {
           <strong>Llama 3.3 70B-Versatile</strong>, proporcionado por{" "}
           <strong>GroqCloud API</strong>.
         </p>
+
         <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com"
-          title="Demo del Sistema Híbrido LLM y RAG"
-          frameBorder="0"
+          width="1897"
+          height="785"
+          src="https://www.youtube.com/embed/SQNHUjZ88sE"
+          title="Sistema de creación de chatbots con chatscript - Vista de desarrollador"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
         ></iframe>
       </section>
     </div>
