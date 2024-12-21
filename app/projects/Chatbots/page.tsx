@@ -86,7 +86,7 @@ export default function Page() {
         <h2 className="text-3xl font-semibold text-white">
           Tecnologías Utilizadas
         </h2>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid ms:grid-cols-2 md:grid-cols-2 gap-4">
           <div className="bg-gray-700 rounded p-4">
             <h3 className="text-2xl font-bold text-white">Frontend</h3>
             <p className="text-gray-300">
