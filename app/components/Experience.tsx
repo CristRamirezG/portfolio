@@ -8,13 +8,13 @@ export default function Experience() {
     },
     {
       year: "2023",
-      title: "Sistema de Campañas Telefónicas (Alloxentric)",
+      title: "(Práctica Profesional) Sistema de Campañas Telefónicas (Alloxentric)",
       description:
         "Implementación inicial de un sistema para gestionar campañas de llamadas utilizando Vue.js, FastAPI, MongoDB y Docker en un entorno basado en Asterisk.",
     },
     {
       year: "2022",
-      title: "Gestor de Inventario (Jupiter Pizzería)",
+      title: "(Proyecto personal) Gestor de Inventario (Jupiter Pizzería)",
       description:
         "Sistema integral de gestión de inventarios con Laravel, bajo el modelo MVC, incluyendo frontend, backend y base de datos MySQL.",
     },

@@ -35,6 +35,12 @@ const projects: Project[] = [
     link: "https://github.com/CristRamirezG/Finetunning-Mistral7B-qlora-dracula-bram-stoker-1897",
   },
   {
+    title: "Modelo Predictivo para entrega de pedidos (Random Forest, KNN, Gradient Boosting, Linear SVC, Decision Tree, XGBoost y LightGBM)",
+    description: "2023: modelo predictivo para estimar el tiempo total necesario para completar pedidos, utilizando datos históricos de órdenes, información de productos, detalles de los shoppers y características de las sucursales, evaluando el rendimiento de diferentes modelos de aprendizaje automático y optimizando la selección de modelos.",
+    images: ["/project_img/PredictiveModel/1.png", "/project_img/PredictiveModel/2.png"],
+    link: "https://github.com/CristRamirezG/Modelo-Predictivo-Tiempo-de-entrega-de-pedidos",
+  },
+  {
     title: "Sistema de Campañas Telefónicas",
     description:
       "2023: Desarrollo de un sistema para gestionar campañas de llamadas telefónicas. Utilización de Vue.js, FastAPI, MongoDB y Docker en un entorno basado en Asterisk.",
