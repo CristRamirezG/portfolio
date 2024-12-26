@@ -17,12 +17,8 @@ export default function Skills() {
       ],
     },
     {
-      category: "Desarrollo Backend",
-      items: ["FastAPI", "Spring Boot", "MySQL", "Oracle", "MongoDB"],
-    },
-    {
-      category: "Desarrollo Frontend",
-      items: ["Vue.js", "Next.js", "Flask", "Laravel"],
+      category: "Desarrollo Backend y Frontend",
+      items: ["FastAPI", "Spring Boot", "MySQL", "Oracle", "MongoDB", "Vue.js", "Next.js", "Flask", "Laravel"],
     },
     {
       category: "Inteligencia Artificial",
@@ -46,6 +42,10 @@ export default function Skills() {
       category: "Sistemas y Despliegue",
       items: ["Docker", "Render", "Vercel", "Keycloak", "OAuth"],
     },
+    {
+      category:"QA",
+      items: ["Selenium (En java y python)", "appium (Aplicaciones móviles)"]
+    }
   ];
 
   return (
