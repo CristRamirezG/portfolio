@@ -67,9 +67,9 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
           {contactInfo.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-between bg-card rounded-lg p-3 shadow-md hover:shadow-lg transition-all duration-300"
+              className="flex items-center justify-between bg-card rounded-lg p-2 shadow-md hover:shadow-lg transition-all duration-300"
             >
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-1">
                 <item.icon className="w-5 h-5 text-primary" />
                 <span className="text-foreground">{item.value}</span>
               </div>

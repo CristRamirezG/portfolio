@@ -53,13 +53,13 @@ export default function Page() {
           </ul>
         </div>
 
-        <div className="mt-8 ">
-          <h3 className="text-xl font-medium text-gray-200 mb-4">
+        <div className="mt-8  ">
+          <h3 className="text-xl font-medium text-gray-200 mb-4 ">
             Agregar el Bot a tu servidor de Discord
           </h3>
           <Link
             href="https://discord.com/oauth2/authorize?client_id=643516900965482506&permissions=3348544&scope=bot"
-            className="btn inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white"
+            className="btn inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white m-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -74,7 +74,7 @@ export default function Page() {
             Agregar Bot a Discord
           </Link>
           
-          <Link href="https://openai-discord-bodoque.onrender.com" className="btn inline-flex items-center bg-fuchsia-50 hover:bg-indigo-300 text-black ml-3" target="_blank" rel="noopener noreferrer">
+          <Link href="https://openai-discord-bodoque.onrender.com" className="btn inline-flex items-center bg-fuchsia-50 hover:bg-indigo-300 text-black ml-3 m-2" target="_blank" rel="noopener noreferrer">
             <svg
               className="w-5 h-5 mr-2"
               fill="currentColor"

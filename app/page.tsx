@@ -26,7 +26,7 @@ export default function Page() {
         <Experience />
         <Education />
         <Projects />
-        <Contact />
+        {/*<Contact />*/}
       </div>
     </main>
   );

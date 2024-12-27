@@ -77,7 +77,7 @@ export default function Projects() {
       </div>
       <div className="text-center mt-8">
         <Link
-          href="/proyectos"
+          href="/"
           className="inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-md text-primary bg-background hover:bg-primary hover:text-white transition-colors"
         >
           Ver todos los proyectos
@@ -130,7 +130,7 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <Link href={project.link} passHref legacyBehavior>
-      <a className="block bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+      <a className="block bg-card rounded-lg bg-neutral-950 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:bg-opacity-75">
         <div className="relative h-48">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div

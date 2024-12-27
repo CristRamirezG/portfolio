@@ -152,8 +152,8 @@ export default function RootLayout({
           </div>
         </header>
 
-        <div className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
-          <main className="bg-black/80 backdrop-blur-sm rounded-lg shadow-lg p-4 sm:p-6">
+        <div className="flex-grow container mx-auto ">
+          <main className="bg-black/80 backdrop-blur-sm rounded-2xl shadow-lg p-4 ">
             {children}
           </main>
         </div>

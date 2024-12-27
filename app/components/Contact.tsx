@@ -16,7 +16,7 @@ export default function Contact() {
         <p className="text-center text-muted-foreground mb-8">
           ¿Interesado en colaborar o tienes alguna pregunta?.
         </p>
-        <div className="space-y-4">
+        <div className="space-y-2 ">
           {contactInfo.map((item, index) => (
             <div
               key={index}
