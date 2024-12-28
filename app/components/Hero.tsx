@@ -26,9 +26,8 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    url: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
-  },
-  { icon: Twitter, label: "Twitter", url: "https://twitter.com/Elbowed056" },
+    url: "https://www.linkedin.com/in/crist%C3%B3bal-andr%C3%A9s-ram%C3%ADrez-gonz%C3%A1lez",
+  }
 ];
 
 export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
