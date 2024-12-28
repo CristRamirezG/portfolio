@@ -6,11 +6,6 @@ export default function Education() {
         "Licenciatura en ciencias de la ingeniería y Ingeniería civil en computación mención informática (en curso)",
       institution: "Universidad tecnológica metropolitana (UTEM)",
     },
-    {
-      year: "2014 - 2016",
-      degree: "Enseñanza media",
-      institution: "Instituto O'higgins de maipú",
-    },
   ];
 
   return (
