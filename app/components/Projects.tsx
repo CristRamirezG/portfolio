@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Project = {
@@ -12,7 +12,6 @@ type Project = {
 };
 
 const projects: Project[] = [
-  
   {
     title: "Bot de Discord con LLM, Text-to-Voice y Sistema RAG",
     description:
@@ -24,7 +23,11 @@ const projects: Project[] = [
     title: "Sistema de Automatización de Chatbots",
     description:
       "2024: Creación automática de chatbots en ChatScript Utilizando Modelos LLM. Integración de Vue.js, Keycloak, MongoDB, GroqCloud API, Weaviate y LangChain, optimizando memoria y concurrencia.",
-    images: ["/project_img/Chatbots/1.png", "/project_img/Chatbots/2.png", "/project_img/Chatbots/3.png"],
+    images: [
+      "/project_img/Chatbots/1.png",
+      "/project_img/Chatbots/2.png",
+      "/project_img/Chatbots/3.png",
+    ],
     link: "/projects/Chatbots",
   },
   {
@@ -35,10 +38,22 @@ const projects: Project[] = [
     link: "https://github.com/CristRamirezG/Finetunning-Mistral7B-qlora-dracula-bram-stoker-1897",
   },
   {
-    title: "Modelo Predictivo para entrega de pedidos (Random Forest, KNN, Gradient Boosting, Linear SVC, Decision Tree, XGBoost y LightGBM)",
-    description: "2023: modelo predictivo para estimar el tiempo total necesario para completar pedidos, utilizando datos históricos de órdenes, información de productos, detalles de los shoppers y características de las sucursales, evaluando el rendimiento de diferentes modelos de aprendizaje automático y optimizando la selección de modelos.",
-    images: ["/project_img/PredictiveModel/1.png", "/project_img/PredictiveModel/2.png"],
+    title:
+      "Modelo Predictivo para entrega de pedidos (Random Forest, KNN, Gradient Boosting, Linear SVC, Decision Tree, XGBoost y LightGBM)",
+    description:
+      "2023: modelo predictivo para estimar el tiempo total necesario para completar pedidos, utilizando datos históricos de órdenes, información de productos, detalles de los shoppers y características de las sucursales, evaluando el rendimiento de diferentes modelos de aprendizaje automático y optimizando la selección de modelos.",
+    images: [
+      "/project_img/PredictiveModel/1.png",
+      "/project_img/PredictiveModel/2.png",
+    ],
     link: "https://github.com/CristRamirezG/Modelo-Predictivo-Tiempo-de-entrega-de-pedidos",
+  },
+  {
+    title: "Clasificador de objetos con CNN y Transfer Learning",
+    description:
+      "2023: Desarrollé un sistema de clasificación de imágenes con CNNs y modelos preentrenados como DenseNet169, ResNet50 y MobileNetV2, aplicando ajuste fino, data augmentation y balanceo de datos. Las imágenes fueron procesadas con ETL (recorte, normalización, eliminación de duplicados) y las etiquetas con codificación one-hot. Se evaluaron con métricas como precisión y F1-score, destacando DenseNet169 y ResNet50, y optimicé los pipelines de entrenamiento con TensorFlow/Keras y early stopping.",
+    images: ["/project_img/CNN/1.png"],
+    link: "https://github.com/CristRamirezG/Clasificador-de-objetos-con-CNN-y-Modelos-Preentrenados",
   },
   {
     title: "Sistema de Campañas Telefónicas",
@@ -93,7 +108,9 @@ function ProjectCard({ project }: { project: Project }) {
 
   const handleNextImage = () => {
     setDirection(1);
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex + 1) % project.images.length
+    );
   };
 
   const handlePrevImage = () => {
@@ -145,9 +162,9 @@ function ProjectCard({ project }: { project: Project }) {
                 opacity: { duration: 0.2 },
               }}
               style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100%',
+                position: "absolute",
+                width: "100%",
+                height: "100%",
               }}
             >
               <Image
@@ -184,7 +201,9 @@ function ProjectCard({ project }: { project: Project }) {
           )}
         </div>
         <div className="p-4">
-          <h3 className="text-xl font-semibold text-primary mb-2">{project.title}</h3>
+          <h3 className="text-xl font-semibold text-primary mb-2">
+            {project.title}
+          </h3>
           <p className="text-muted-foreground">{project.description}</p>
         </div>
       </a>
