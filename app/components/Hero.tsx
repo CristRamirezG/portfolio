@@ -99,7 +99,18 @@ export default function Hero({ copyToClipboard, copiedField }: HeroProps) {
               <social.icon className="w-6 h-6" />
             </a>
           ))}
+          <div>
+          <a
+            href="files/cv.pdf"
+            download
+            className="text-primary border-2 border-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300"
+            aria-label="Descargar Curriculum Vitae"
+          >
+            Descargar CV
+          </a>
+          </div>
         </div>
+        
       </div>
     </section>
   );
